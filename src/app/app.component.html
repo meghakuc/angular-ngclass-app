@@ -1,0 +1,9 @@
+<h1 class ="title">{{title}}</h1>
+<div class="container">
+  <div *ngFor="let celeb of actors">
+     <p [ngClass]="{'text-danger':celeb.status === 'Dead',
+    'text-info':celeb.status === 'Alive'}">
+    {{ celeb.artist }} is {{celeb.status}}
+     </p>
+   </div>
+</div>
